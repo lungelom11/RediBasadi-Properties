@@ -1,0 +1,213 @@
+:root {
+    --primary-color: #ec1f1f;
+    --header-size: 3.5rem;
+    --secondary-header-size: 2rem;
+    --paragraphs: 1rem;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.hero {
+    width: 100%;
+    height: 85vh;
+    background: var(--primary-color);
+    position: relative;
+}
+.nav-bar {
+    margin: 0px 50px;
+    background: transparent;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.logo{
+    width: 130px;
+}
+.menu-list {
+    display: flex;
+}
+.menu-list li {
+    font-size: 1.5rem;
+    padding: 10px;
+    margin: 0 5px;
+    color: #fff;
+} 
+.menu-list li:hover {
+    cursor: pointer;
+    border-bottom: 2px solid #fff;
+    transform: scale(0.98);
+}
+.header{
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-top: 30px;
+    overflow: visible;
+}
+.header-text {
+    animation: slideInFromLeft 1s ease-in ;
+}
+.header h1 {
+    font-size: var(--header-size);
+    font-family: 'Young Serif', serif;
+}
+.header h2 {
+    font-size: var(--secondary-header-size);
+    font-family: 'Young Serif', serif;
+    margin-bottom: 2rem;
+}
+.services-list li{
+    font-size: 1.7rem;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    color: #fff;
+    list-style: circle;
+    margin-bottom: .5rem;
+}
+.header-img{
+    width: 400px;
+    position: relative;
+    top: 50px;
+    z-index: 100;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    animation: slideInFromRight 1s ease-in;
+}
+
+.hero::before,
+.hero::after {
+    content: '';
+    position: absolute;
+    height: 100px;
+    bottom: -70px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+}
+/*---Abput Us*/
+.about-us {
+    margin-top: 200px;
+}
+.about-us .container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 40px;
+    padding: 0 30px;
+}
+.about-us-text p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+.about-us-img {
+    margin: 0 20px;
+}
+/* Renovations Section */
+.renovations{
+    padding: 80px 50px;
+}
+
+.renovations h2{
+    font-size: var(--header-size);
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+.renovations p{
+    font-size: 1.5rem;
+    width: 60%;
+    font-family: 'Inter', sans-serif;
+}
+.renovations-services {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card {
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+.card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+/*--Cleaning--*/
+.container{
+    max-width: 1100px;
+    padding: 0 50px;
+    margin: 0 auto;
+}
+.cleaning {
+    margin: 50px 0;
+}
+.cleaning h1{
+    font-size: var(--header-size);
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+.cleaning p {
+    font-size: 1.5rem;
+    width: 60%;
+    margin-bottom: 1.5rem;
+    font-family: 'Inter', sans-serif;
+}
+.cleaning-img {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cleaning-img .card {
+    width: 400px;
+}
+
+/*--Contact---*/
+.contact {
+    background: var(--primary-color);
+    padding: 50px;
+}
+.contact .container h2{
+    font-size: var(--secondary-header-size);
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+
+/*---Footer----*/
+footer {
+    height: 100px;
+    background: var(--primary-color);
+    color: #fff;
+    text-align: center;
+}
+.social-icons .fa-brands{
+    font-size: 2rem;
+    margin: 20px;
+}
+
+/*---Animations--*/
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
