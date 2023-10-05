@@ -4,6 +4,10 @@
     --secondary-header-size: 2rem;
     --paragraphs: 1rem;
 }
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -92,16 +96,21 @@
 .about-us {
     margin-top: 200px;
 }
-.about-us .container{
+.about-carousel {
     display: flex;
-    justify-content: space-between;
-    margin: 0 40px;
-    padding: 0 30px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.about-carousel .card{
+    width: 350px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    margin: 0 20px;
 }
 .about-us-text p {
     font-size: 1.5rem;
-    font-weight: 400;
     font-family: 'Poppins', sans-serif;
+    text-align: center;
 }
 .about-us-img {
     margin: 0 20px;
@@ -174,10 +183,39 @@
     background: var(--primary-color);
     padding: 50px;
 }
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .contact .container h2{
     font-size: var(--secondary-header-size);
     font-family: 'Poppins', sans-serif;
     margin-bottom: 1.5rem;
+    color: #fff;
+}
+.contact-img {
+    width: 300px;
+}
+.fa-solid,
+.fa-regular {
+    font-size: 1.7rem;
+    color: #fff;
+}
+.call,
+.email,
+.location {
+    display: flex;
+    margin: 20px 0;
+    align-items: center;
+    
+}
+.call p,
+.email p,
+.location p {
+    font-size: var(--secondary-header-size);
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    margin-left: 10px;
     color: #fff;
 }
 
